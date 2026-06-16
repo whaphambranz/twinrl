@@ -1,0 +1,6 @@
+extends = "main.toml"
+
+name = "sensitivity_batch_size"
+
+[train]
+batch_size = 64

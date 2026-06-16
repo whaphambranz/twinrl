@@ -1,0 +1,55 @@
+extends = "../data/base.toml"
+
+[model]
+gene_dim = 2247
+flow_dim = 256
+clinical_dim = 32
+fuse_dim = 256
+latent_dim = 64
+hidden_dim = 256
+n_heads = 4
+beta = 0.1
+action_dim = 32
+use_stochastic = true
+use_kl = true
+use_gene_attention = true
+use_multihead_encoder = true
+backbone = "gru"
+
+[policy]
+phases = ["induction", "consolidation", "maintenance", "holiday"]
+dose_levels_mg = [0.0, 100.0, 200.0, 400.0]
+combos = ["mono", "rituximab"]
+gamma = 0.99
+lam = 0.95
+phase_duration = 6
+hierarchical = true
+fixed_phase_duration = false
+phase_specific_lowlevel = true
+
+[imagination]
+horizon = 15
+n_rollouts = 50
+use_rollouts = true
+aggregate = true
+progression_horizon = 12
+
+[sim]
+growth_sensitive = 0.18
+growth_resistant = 0.22
+emax = 0.95
+ec50_mg = 145.0
+hill = 1.4
+resistant_kill_ratio = 0.35
+gly101val_rate = 0.012
+mcl1_rescue = 0.08
+rituximab_boost = 0.12
+baseline_burden = 1.0
+cr_threshold = 0.05
+pr_threshold = 0.5
+pd_threshold = 1.2
+w_resp = 1.0
+w_tox = 0.3
+w_prog = 0.5
+w_qol = 0.2
+episode_length = 24

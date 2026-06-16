@@ -1,0 +1,37 @@
+name = "smoke"
+
+[model]
+gene_dim = 80
+flow_dim = 40
+clinical_dim = 16
+fuse_dim = 32
+latent_dim = 8
+hidden_dim = 32
+n_heads = 2
+action_dim = 8
+
+[data]
+n_patients = 40
+n_folds = 3
+biology_dim = 12
+seed = 0
+
+[imagination]
+horizon = 5
+n_rollouts = 4
+progression_horizon = 6
+
+[sim]
+episode_length = 8
+
+[policy]
+phase_duration = 3
+
+[train]
+iterations = 2
+batch_size = 8
+seq_len = 6
+patience = 50
+early_stopping = false
+seed = 0
+device = "cpu"

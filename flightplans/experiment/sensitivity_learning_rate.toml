@@ -1,0 +1,8 @@
+extends = "main.toml"
+
+name = "sensitivity_learning_rate"
+
+[train]
+world_lr = 1e-3
+actor_lr = 1e-3
+critic_lr = 1e-3

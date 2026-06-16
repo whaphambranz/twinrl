@@ -1,0 +1,6 @@
+extends = "main.toml"
+
+name = "ablation_no_stochastic"
+
+[model]
+use_stochastic = false

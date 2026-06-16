@@ -1,0 +1,6 @@
+extends = "main.toml"
+
+name = "ablation_fixed_phase"
+
+[policy]
+fixed_phase_duration = true

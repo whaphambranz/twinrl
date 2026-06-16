@@ -1,0 +1,6 @@
+extends = "main.toml"
+
+name = "crossdataset_hold_gse50006"
+
+[data]
+holdout_dataset = "GSE50006"

@@ -1,0 +1,6 @@
+extends = "main.toml"
+
+name = "ablation_no_multihead"
+
+[model]
+use_multihead_encoder = false

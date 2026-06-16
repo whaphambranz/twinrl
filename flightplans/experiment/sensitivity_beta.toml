@@ -1,0 +1,6 @@
+extends = "main.toml"
+
+name = "sensitivity_beta"
+
+[model]
+beta = 0.2

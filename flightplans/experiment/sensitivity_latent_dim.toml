@@ -1,0 +1,6 @@
+extends = "main.toml"
+
+name = "sensitivity_latent_dim"
+
+[model]
+latent_dim = 128

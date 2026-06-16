@@ -1,0 +1,6 @@
+extends = "main.toml"
+
+name = "ablation_no_kl"
+
+[model]
+use_kl = false

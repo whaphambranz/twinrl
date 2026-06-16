@@ -1,0 +1,6 @@
+extends = "main.toml"
+
+name = "ablation_flat_policy"
+
+[policy]
+hierarchical = false

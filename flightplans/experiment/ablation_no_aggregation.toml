@@ -1,0 +1,6 @@
+extends = "main.toml"
+
+name = "ablation_no_aggregation"
+
+[imagination]
+aggregate = false

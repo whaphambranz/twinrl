@@ -1,0 +1,13 @@
+extends = "../train/base.toml"
+
+[data]
+datasets = ["GSE39671", "GSE22762", "GSE50006"]
+n_patients = 348
+n_folds = 5
+combat = true
+ighv_unmutated_frac = 0.494
+del17p_frac = 0.095
+tp53_frac = 0.144
+biology_dim = 16
+holdout_dataset = ""
+seed = 0

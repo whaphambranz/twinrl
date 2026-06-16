@@ -1,0 +1,6 @@
+extends = "main.toml"
+
+name = "ablation_no_rollouts"
+
+[imagination]
+use_rollouts = false

@@ -1,0 +1,6 @@
+extends = "main.toml"
+
+name = "sensitivity_lambda"
+
+[policy]
+lam = 0.99

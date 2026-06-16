@@ -1,0 +1,6 @@
+extends = "main.toml"
+
+name = "ablation_single_rollout"
+
+[imagination]
+n_rollouts = 1

@@ -1,0 +1,6 @@
+extends = "main.toml"
+
+name = "sensitivity_hidden_dim"
+
+[model]
+hidden_dim = 512

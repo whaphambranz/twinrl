@@ -1,0 +1,6 @@
+extends = "main.toml"
+
+name = "sensitivity_mc_rollouts"
+
+[imagination]
+n_rollouts = 100
